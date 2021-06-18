@@ -15,6 +15,7 @@ html {
 .container {
     width: 80%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .w-90 {
@@ -22,6 +23,7 @@ html {
     margin:0 auto;
 }
 
+/* Classi per il posizionamento */
 .float-left {
     float:left;
 }
@@ -29,6 +31,32 @@ html {
 .float-right{
     float: right; 
 }
+
+/* ** Usare l'after su clearfix per fissare */
+.clearfix::after{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+/* ** Da usare sempre con line-height e sull'elemento */
+.vertical-align-middle{
+    vertical-align: middle;
+}
+
+/* Bottoni */
+.btn-little{
+    padding: 0 20px;
+}
+
+
+/* Classi colore */
+
+.bg-blue{
+    color:white;
+    background-color: blue;
+}
+
 
 /* Fine Generali */
 
@@ -55,9 +83,24 @@ header nav ul li a {
 }
 
 header .wrap {
-    margin-top: 25px;
+    line-height: 80px;
+    
+}
+
+a.bg-blue {
+    font-size: 15px;
 }
 /* /Header */
+
+/* Inizio Jumbrotron */
+
+.jumbotron{
+    background-color:rgba(107, 185, 240, 1);
+    position: relative;
+    height: 800px;
+}
+
+/* Fine Jumbotron */
 
 
 /* Debug */
