@@ -47,16 +47,25 @@ html {
 }
 
 /* Bottoni */
-.btn-little {
-    padding: 0 20px;
+/* Reset bottoni e formattazzione testo */
+button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
 }
+
 
 
 /* Classi colore */
 
 .bg-blue {
-    color: white;
     background-color: blue;
+   
 }
 
 .row {
@@ -95,9 +104,6 @@ header .wrap {
 
 }
 
-a.bg-blue {
-    font-size: 15px;
-}
 
 /* /Header */
 
@@ -119,8 +125,19 @@ a.bg-blue {
 /* Titolo jumbotron */
 .jumbotron h1 {
     font-size: 4em;
+    padding-top: 2%;
 }
 /* /Fine Titolo jumbotron */
+
+/* Span descrizione jumbtron */
+.row-float-left span{
+    font-weight:bolder;
+    padding-top: 2%;
+}
+/*/Fine Span descrizione jumbtron */
+
+/* Pulsante prova gratuita */
+
 
 /* Colonne Jumbotron */
 .col-float-left{
@@ -139,11 +156,7 @@ a.bg-blue {
     bottom: -20px;
 }
 
-/* Span descrizione jumbtron */
-.row-float-left span{
-    font-weight:bolder;
-}
-/*/Fine Span descrizione jumbtron */
+
 
 
 /* Fine Jumbotron */
@@ -154,3 +167,9 @@ a.bg-blue {
 .debug header {
     background-color: blue;
 }
+
+.btn-little {
+    padding: 0 20px;
+}
+
+/* /Fine Debug */
