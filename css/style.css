@@ -1,9 +1,9 @@
 /* Reset */
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Generali */
@@ -20,41 +20,49 @@ html {
 
 .w-90 {
     width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 /* Classi per il posizionamento */
 .float-left {
-    float:left;
+    float: left;
+   
 }
 
-.float-right{
-    float: right; 
+.float-right {
+    float: right;
+   
 }
 
 /* ** Usare l'after su clearfix per fissare */
-.clearfix::after{
-    content:"";
+.clearfix::after {
+    content: "";
     display: table;
-    clear:both;
+    clear: both;
 }
 
 /* ** Da usare sempre con line-height e sull'elemento */
-.vertical-align-middle{
+.vertical-align-middle {
     vertical-align: middle;
 }
 
 /* Bottoni */
-.btn-little{
+.btn-little {
     padding: 0 20px;
 }
 
 
 /* Classi colore */
 
-.bg-blue{
-    color:white;
+.bg-blue {
+    color: white;
     background-color: blue;
+}
+
+.row {
+
+    display: inline-block;
+
 }
 
 
@@ -70,7 +78,7 @@ header {
 }
 
 header nav ul li {
-    display:inline;
+    display: inline;
     list-style: none;
 }
 
@@ -84,20 +92,42 @@ header nav ul li a {
 
 header .wrap {
     line-height: 80px;
-    
+
 }
 
 a.bg-blue {
     font-size: 15px;
 }
+
 /* /Header */
 
 /* Inizio Jumbrotron */
 
-.jumbotron{
-    background-color:rgba(107, 185, 240, 1);
+.jumbotron {
+    background-color: rgba(107, 185, 240, 1);
     position: relative;
-    height: 800px;
+
+    /* height: 800px; */
+}
+
+.jumbotron img {
+
+    width:100%;
+}
+
+/* Titolo jumbotron */
+.jumbotron h1 {
+    font-size: 4em;
+}
+
+.row-float-left{
+    float:left;
+    width: 48%;
+}
+
+.row-float-right{
+    float:right;
+    width: 48%;
 }
 
 /* Fine Jumbotron */
