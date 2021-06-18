@@ -106,8 +106,9 @@ a.bg-blue {
 .jumbotron {
     background-color: rgba(107, 185, 240, 1);
     position: relative;
-
-    /* height: 800px; */
+    /* *! Serve a dare lo sfondo bianco al bottom dell'immagine nella colonna di  destra  */
+    /* *! Sostituire con un'immagine monocromatica e usare background-resize o trovare una soluzione     migliore  */
+    height: 410px;
 }
 
 .jumbotron img {
@@ -119,16 +120,31 @@ a.bg-blue {
 .jumbotron h1 {
     font-size: 4em;
 }
+/* /Fine Titolo jumbotron */
 
-.row-float-left{
+/* Colonne Jumbotron */
+.col-float-left{
     float:left;
     width: 48%;
 }
+/* (Fine Colonne Jumbotron */
 
-.row-float-right{
+.col-float-right{
     float:right;
     width: 48%;
 }
+
+
+.col-float-right img{
+    bottom: -20px;
+}
+
+/* Span descrizione jumbtron */
+.row-float-left span{
+    font-weight:bolder;
+}
+/*/Fine Span descrizione jumbtron */
+
 
 /* Fine Jumbotron */
 
