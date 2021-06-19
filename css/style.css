@@ -23,6 +23,10 @@ html {
     margin: 0 auto;
 }
 
+.w-48{
+    width: 48%;
+}
+
 /* Classi per il posizionamento */
 .float-left {
     float: left;
@@ -124,7 +128,7 @@ header .wrap {
     position: relative;
     /* *! Serve a dare lo sfondo bianco al bottom dell'immagine nella colonna di  destra  */
     /* *! Sostituire con un'immagine monocromatica e usare background-resize o trovare una soluzione     migliore  */
-    height: 410px;
+    height: 450px;
 }
 
 .jumbotron img {
@@ -149,26 +153,19 @@ header .wrap {
 
 /* Pulsante prova gratuita */
 
-
-/* Pulsante prova gratuita */
-
-/* Colonne Jumbotron */
-.col-float-left {
-    float: left;
-    width: 48%;
-}
-
-/* (Fine Colonne Jumbotron */
-
-.col-float-right {
-    float: right;
-    width: 48%;
+button.bg-blue:nth-child(2){
+    margin-top: 2em;
+    margin-left: 1em;
 }
 
 
-.col-float-right img {
-    bottom: -20px;
+/* Testo jumbotron */
+#condizioni,
+.fas {
+    margin-top: 1em;
+    margin-left: 1em;
 }
+
 
 /* Fine Jumbotron */
 
