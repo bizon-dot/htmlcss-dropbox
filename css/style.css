@@ -50,6 +50,18 @@ html {
     vertical-align: middle;
 }
 
+/* Formattazione testo */
+
+/* Testo giustificato */
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* /Testo giustificato */
+
+
+/* /Fine Formattazione testo */
+
 /* Bottoni */
 /* Reset bottoni e formattazzione testo */
 button {
@@ -62,12 +74,24 @@ button {
     font-size: 16px;
 
 }
+
+/* Bottone trasparente */
+
+.btn-transparent {
+    color:black;
+    font-weight: bolder;
+    border: solid 1px;
+    background-color: rgba(255, 99, 71, 0)
+    
+}
+/* /Fine Bottone trasparente */
 /* Classi colore */
 
 .bg-blue {
     background-color: blue;
 
 }
+
 
 /* /Fine Classi colore */
 
@@ -128,7 +152,7 @@ header .wrap {
     position: relative;
     /* *! Serve a dare lo sfondo bianco al bottom dell'immagine nella colonna di  destra  */
     /* *! Sostituire con un'immagine monocromatica e usare background-resize o trovare una soluzione     migliore  */
-    height: 450px;
+    height: 480px;
 }
 
 .jumbotron img {
@@ -158,6 +182,10 @@ button.bg-blue:nth-child(2){
     margin-left: 1em;
 }
 
+span.justify{
+    font-size:20px;
+
+}
 
 /* Testo jumbotron */
 #condizioni,
@@ -170,6 +198,31 @@ button.bg-blue:nth-child(2){
 /* Fine Jumbotron */
 
 
+
+/* Sezione trovaAgente */
+.trova-agente{
+    margin-top: 4em;
+}
+/* Img */
+div.w-48:nth-child(1) > img:nth-child(1){
+    width:100%;
+}
+
+p.justify{
+    margin-top:10px;
+    font-size:20px;
+
+}
+
+/* Titolo */
+div.float-right:nth-child(2) > h2:nth-child(1){
+    font-size:30px;
+    font-weight: bolder;
+}
+
+ .float-right.w-48  button {
+    margin-top: 1em;
+}
 /* Debug */
 
 .debug header {
