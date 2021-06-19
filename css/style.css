@@ -26,12 +26,12 @@ html {
 /* Classi per il posizionamento */
 .float-left {
     float: left;
-   
+
 }
 
 .float-right {
     float: right;
-   
+
 }
 
 /* ** Usare l'after su clearfix per fissare */
@@ -58,22 +58,19 @@ button {
     font-size: 16px;
 
 }
-
-
-
 /* Classi colore */
 
 .bg-blue {
     background-color: blue;
-   
+
 }
 
-.row {
+/* /Fine Classi colore */
 
+.row {
     display: inline-block;
 
 }
-
 
 /* Fine Generali */
 
@@ -84,6 +81,11 @@ header {
     height: 80px;
     margin-top: 10px;
 
+}
+
+/* Posizionamento logo */
+.logo > img:nth-child(1) {
+    margin-right: 50px;
 }
 
 header nav ul li {
@@ -104,7 +106,15 @@ header .wrap {
 
 }
 
+/* Bottone accedi */
+#btn-header {
+    font-size:14px;
+    margin-left: 50px;
+    padding: 5px 10px;
 
+}
+
+/* / Bottone accedi */
 /* /Header */
 
 /* Inizio Jumbrotron */
@@ -118,8 +128,7 @@ header .wrap {
 }
 
 .jumbotron img {
-
-    width:100%;
+    width: 100%;
 }
 
 /* Titolo jumbotron */
@@ -127,37 +136,39 @@ header .wrap {
     font-size: 4em;
     padding-top: 2%;
 }
+
 /* /Fine Titolo jumbotron */
 
 /* Span descrizione jumbtron */
-.row-float-left span{
-    font-weight:bolder;
+.row-float-left span {
+    font-weight: bolder;
     padding-top: 2%;
 }
+
 /*/Fine Span descrizione jumbtron */
 
 /* Pulsante prova gratuita */
 
 
+/* Pulsante prova gratuita */
+
 /* Colonne Jumbotron */
-.col-float-left{
-    float:left;
+.col-float-left {
+    float: left;
     width: 48%;
 }
+
 /* (Fine Colonne Jumbotron */
 
-.col-float-right{
-    float:right;
+.col-float-right {
+    float: right;
     width: 48%;
 }
 
 
-.col-float-right img{
+.col-float-right img {
     bottom: -20px;
 }
-
-
-
 
 /* Fine Jumbotron */
 
