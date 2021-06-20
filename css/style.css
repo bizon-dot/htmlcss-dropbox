@@ -28,13 +28,9 @@ html {
     width: 48%;
 }
 
-.w-100{
-    position: relative;
+.w-100 {
     width: 100%;
-    margin: 0 auto;
 }
-
-
 
 /* Classi per il posizionamento */
 .float-left {
@@ -74,6 +70,11 @@ html {
 
 /* /Testo giustificato */
 
+/* Titolo sottosezioni */
+.sub-title {
+    font-size: 3em;
+    font-weight: bolder;
+}
 
 /* /Fine Formattazione testo */
 
@@ -106,6 +107,7 @@ button {
     color: black;
     background-color: white
 }
+
 /* Classi colore */
 
 .bg-blue {
@@ -114,7 +116,7 @@ button {
 }
 
 .bg-white {
-    background-color:white;
+    background-color: white;
 }
 
 
@@ -172,14 +174,23 @@ header .wrap {
 
 /* Inizio Jumbrotron */
 
-.jumbotron {
-    background-color: rgba(107, 185, 240, 1);
-    position: relative;
-    /* *! ho sostituito l'altezza fissa del jumbotron con una div vuota bianca (vedi .white-row) con dimensioni fisse e margine negativo */
 
-    /* *! Serve a dare lo sfondo bianco al bottom dell'immagine nella colonna di  destra  */
+.jumbotron {
+    /*  *! 3. ho sostituito la row bianca con un pattern, conviene invertire? Creo file 
+    /*    *!      di un pixel e ripeto lo sfondo invece che ridimenzionarlo?
+    /* *! 2. ho sostituito l'altezza fissa del jumbotron con una div vuota bianca (vedi .white-row) con dimensioni fisse e margine negativo */
+
+    /* *! 1. Serve a dare lo sfondo bianco al bottom dell'immagine nella colonna di  destra  */
     /* *! Sostituire con un'immagine monocromatica e usare background-resize o trovare una soluzione migliore  */
-    /* height: 500px; */
+  
+    position: relative;
+    background-image: url("../img/light_blue_bg.png");
+    background-size: 100% 92%;
+    background-repeat: no-repeat;
+      /* height: 500px; */
+    /* border: 2px solid; */
+
+
 }
 
 .jumbotron img {
@@ -202,8 +213,8 @@ span.justify {
 }
 
 /* Div che contiene spa-descrione */
-section.jumbotron.clearfix div.container div.float-left.w-48.justify{
-    margin-top:1em;
+section.jumbotron.clearfix div.container div.float-left.w-48.justify {
+    margin-top: 1em;
 }
 
 /*/Fine Span descrizione jumbtron */
@@ -223,21 +234,37 @@ button.bg-blue:nth-child(2) {
 }
 
 /* Riga bianca che fa "uscire" l'img dal jumbotron */
-.white-row{
+.white-row {
     height: 40px;
-    position:absolute;
-    top: -2em;
-    background-color:white;
-    width:100%;
-   
+    position: absolute;
+    bottom: 2em;
+    background-color: white;
+    width: 100%;
+
 }
 
 /* Fine Jumbotron */
 
-/* Sezione trovaAgente */
-.trova-agente {
-    margin-top: 4em;
+/* Inizio sezione piani di fatturazione */
+.piani-fatturazione .container . {
+    margin-top: 2em;
 }
+
+#scelta-piano {
+    margin-top: 2em;
+}
+
+/* .radio-right {
+    margin-left:20px;
+} */
+
+/* /Fine sezione piani di fatturazione */
+
+
+/* Sezione trovaAgente */
+/* .trova-agente {
+    margin-top: 4em;
+} */
 
 /* Img */
 div.w-48:nth-child(1)>img:nth-child(1) {
@@ -271,30 +298,32 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
 }
 
 /* div H2 call-to-action */
-html body section.call-to-action.clearfix div.container div.float-left.w-48 div.title{
-    margin-top:200px;
-    color:maroon;
+html body section.call-to-action.clearfix div.container div.float-left.w-48 div.title {
+    margin-top: 200px;
+    color: maroon;
 }
+
 /*/div H2 call-to-action */
 
 /* H2 */
-html body section.call-to-action.clearfix div.container div.float-left.w-48 div.title h2{
+html body section.call-to-action.clearfix div.container div.float-left.w-48 div.title h2 {
     /* *! se aumento il font si rompe e non è più centrato */
-    font-size:3em;
+    font-size: 3em;
     /* position:absolute; */
-    top:200px;
+    top: 200px;
 }
 
 /* Pulsante call-to-action */
-button.btn-white:nth-child(1){
-    position:absolute;
-    top:200px;
+button.btn-white:nth-child(1) {
+    position: absolute;
+    top: 200px;
     right: 150px;
 }
+
 /* /fine sezione call-to-action */
 /* Debug */
 
-.debug header {
+.debug .container {
     background-color: blue;
 }
 
