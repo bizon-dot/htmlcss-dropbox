@@ -32,6 +32,13 @@ html {
     width: 100%;
 }
 
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+
+
 /* Classi per il posizionamento */
 .float-left {
     float: left;
@@ -43,7 +50,7 @@ html {
 
 }
 
-/* ** Usare l'after su clearfix per fissare */
+/* Clear */
 .clearfix::after {
     content: "";
     display: table;
@@ -54,9 +61,9 @@ html {
 
 .center-x-y {
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-90%, -50%);
     text-align: center;
 }
 
@@ -79,7 +86,7 @@ html {
 /* /Fine Formattazione testo */
 
 /* Bottoni */
-/* Reset bottoni e formattazzione testo */
+/* Reset bottoni e formattazione testo */
 button {
     border: none;
     color: white;
@@ -176,21 +183,17 @@ header .wrap {
 
 
 .jumbotron {
-    /*  *! 3. ho sostituito la row bianca con un pattern, conviene invertire? Creo file 
-    /*    *!      di un pixel e ripeto lo sfondo invece che ridimenzionarlo?
-    /* *! 2. ho sostituito l'altezza fissa del jumbotron con una div vuota bianca (vedi .white-row) con dimensioni fisse e margine negativo */
 
     /* *! 1. Serve a dare lo sfondo bianco al bottom dell'immagine nella colonna di  destra  */
     /* *! Sostituire con un'immagine monocromatica e usare background-resize o trovare una soluzione migliore  */
-  
+    /* *! 2. ho sostituito l'altezza fissa del jumbotron con una div vuota bianca (vedi .white-row) con dimensioni fisse e margine negativo */
+    /*  *! 3. ho sostituito la row bianca con un pattern, conviene invertire? Creo file 
+    /*  *!      di un pixel e ripeto lo sfondo invece che ridimenzionarlo? */
+
     position: relative;
     background-image: url("../img/light_blue_bg.png");
     background-size: 100% 92%;
     background-repeat: no-repeat;
-      /* height: 500px; */
-    /* border: 2px solid; */
-
-
 }
 
 .jumbotron img {
@@ -222,8 +225,12 @@ section.jumbotron.clearfix div.container div.float-left.w-48.justify {
 /* Pulsante prova gratuita */
 
 button.bg-blue:nth-child(2) {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-left: 1em;
+}
+/* Freccia */
+i.fas.fa-arrow-down.fa-2x{
+    margin-top:10px;
 }
 
 /* Testo jumbotron */
@@ -234,38 +241,41 @@ button.bg-blue:nth-child(2) {
 }
 
 /* Riga bianca che fa "uscire" l'img dal jumbotron */
-.white-row {
+/* .white-row {
     height: 40px;
     position: absolute;
     bottom: 2em;
     background-color: white;
     width: 100%;
 
-}
+} */
 
 /* Fine Jumbotron */
 
 /* Inizio sezione piani di fatturazione */
-.piani-fatturazione .container . {
+.piani-fatturazione {
     margin-top: 2em;
+    margin-bottom: 2em;
+
 }
 
-#scelta-piano {
-    margin-top: 2em;
+.piani-fatturazione form div {
+    display:inline;
 }
 
-/* .radio-right {
-    margin-left:20px;
-} */
+.piani-fatturazione .col {
+    border:solid 2px black;
+}
+
+.radio{
+    margin-top:1em;
+}
+
+
 
 /* /Fine sezione piani di fatturazione */
 
-
 /* Sezione trovaAgente */
-/* .trova-agente {
-    margin-top: 4em;
-} */
-
 /* Img */
 div.w-48:nth-child(1)>img:nth-child(1) {
     width: 100%;
