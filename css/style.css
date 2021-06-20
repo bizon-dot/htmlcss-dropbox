@@ -13,6 +13,7 @@ html {
 }
 
 .container {
+    position: relative;
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
@@ -23,9 +24,17 @@ html {
     margin: 0 auto;
 }
 
-.w-48{
+.w-48 {
     width: 48%;
 }
+
+.w-100{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 
 /* Classi per il posizionamento */
 .float-left {
@@ -45,9 +54,14 @@ html {
     clear: both;
 }
 
-/* ** Da usare sempre con line-height e sull'elemento */
-.vertical-align-middle {
-    vertical-align: middle;
+/*  */
+
+.center-x-y {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* Formattazione testo */
@@ -57,6 +71,7 @@ html {
     text-align: justify;
     text-justify: inter-word;
 }
+
 /* /Testo giustificato */
 
 
@@ -78,18 +93,22 @@ button {
 /* Bottone trasparente */
 
 .btn-transparent {
-    color:black;
+    color: black;
     font-weight: bolder;
     border: solid 1px;
     background-color: rgba(255, 99, 71, 0)
-    
 }
+
 /* /Fine Bottone trasparente */
 /* Classi colore */
 
 .bg-blue {
     background-color: blue;
 
+}
+
+.bg-white {
+    background-color:white;
 }
 
 
@@ -112,7 +131,7 @@ header {
 }
 
 /* Posizionamento logo */
-.logo > img:nth-child(1) {
+.logo>img:nth-child(1) {
     margin-right: 50px;
 }
 
@@ -136,7 +155,7 @@ header .wrap {
 
 /* Bottone accedi */
 #btn-header {
-    font-size:14px;
+    font-size: 14px;
     margin-left: 50px;
     padding: 5px 10px;
 
@@ -150,13 +169,17 @@ header .wrap {
 .jumbotron {
     background-color: rgba(107, 185, 240, 1);
     position: relative;
+    /* *! ho sostituito l'altezza fissa del jumbotron con una div vuota bianca (vedi .white-row) con dimensioni fisse e margine negativo */
+
     /* *! Serve a dare lo sfondo bianco al bottom dell'immagine nella colonna di  destra  */
-    /* *! Sostituire con un'immagine monocromatica e usare background-resize o trovare una soluzione     migliore  */
-    height: 480px;
+    /* *! Sostituire con un'immagine monocromatica e usare background-resize o trovare una soluzione migliore  */
+    /* height: 500px; */
 }
 
 .jumbotron img {
+    position: relative;
     width: 100%;
+    z-index: 2;
 }
 
 /* Titolo jumbotron */
@@ -177,13 +200,13 @@ header .wrap {
 
 /* Pulsante prova gratuita */
 
-button.bg-blue:nth-child(2){
+button.bg-blue:nth-child(2) {
     margin-top: 2em;
     margin-left: 1em;
 }
 
-span.justify{
-    font-size:20px;
+span.justify {
+    font-size: 20px;
 
 }
 
@@ -194,35 +217,56 @@ span.justify{
     margin-left: 1em;
 }
 
+/* Riga bianca che fa "uscire" l'img dal jumbotron */
+.white-row{
+    height: 40px;
+    position:absolute;
+    top: -2em;
+    background-color:white;
+    /* right: 0; */
+    width:100%;
+   
+}
 
 /* Fine Jumbotron */
 
-
-
 /* Sezione trovaAgente */
-.trova-agente{
+.trova-agente {
     margin-top: 4em;
 }
+
 /* Img */
-div.w-48:nth-child(1) > img:nth-child(1){
-    width:100%;
+div.w-48:nth-child(1)>img:nth-child(1) {
+    width: 100%;
 }
 
-p.justify{
-    margin-top:10px;
-    font-size:20px;
+p.justify {
+    margin-top: 10px;
+    font-size: 20px;
 
 }
 
 /* Titolo */
-div.float-right:nth-child(2) > h2:nth-child(1){
-    font-size:30px;
+div.float-right:nth-child(2)>h2:nth-child(1) {
+    font-size: 30px;
     font-weight: bolder;
 }
 
- .float-right.w-48  button {
+.float-right.w-48 button {
     margin-top: 1em;
 }
+
+/* /Fine sezione trova agente */
+
+/* call-to-action */
+
+.call-to-action {
+    background-color: rgba(107, 185, 240, 1);
+    height: 400px;
+    position: relative;
+}
+
+/* /fine call-to-action */
 /* Debug */
 
 .debug header {
