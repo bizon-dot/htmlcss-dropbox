@@ -100,6 +100,12 @@ button {
 }
 
 /* /Fine Bottone trasparente */
+
+/* Bottone bianco senza bordi */
+.btn-white {
+    color: black;
+    background-color: white
+}
 /* Classi colore */
 
 .bg-blue {
@@ -191,9 +197,13 @@ header .wrap {
 /* /Fine Titolo jumbotron */
 
 /* Span descrizione jumbtron */
-.row-float-left span {
-    font-weight: bolder;
-    padding-top: 2%;
+span.justify {
+    font-size: 20px;
+}
+
+/* Div che contiene spa-descrione */
+section.jumbotron.clearfix div.container div.float-left.w-48.justify{
+    margin-top:1em;
 }
 
 /*/Fine Span descrizione jumbtron */
@@ -203,11 +213,6 @@ header .wrap {
 button.bg-blue:nth-child(2) {
     margin-top: 2em;
     margin-left: 1em;
-}
-
-span.justify {
-    font-size: 20px;
-
 }
 
 /* Testo jumbotron */
@@ -223,7 +228,6 @@ span.justify {
     position:absolute;
     top: -2em;
     background-color:white;
-    /* right: 0; */
     width:100%;
    
 }
@@ -258,7 +262,7 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
 
 /* /Fine sezione trova agente */
 
-/* call-to-action */
+/* Sezione call-to-action */
 
 .call-to-action {
     background-color: rgba(107, 185, 240, 1);
@@ -266,7 +270,28 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
     position: relative;
 }
 
-/* /fine call-to-action */
+/* div H2 call-to-action */
+html body section.call-to-action.clearfix div.container div.float-left.w-48 div.title{
+    margin-top:200px;
+    color:maroon;
+}
+/*/div H2 call-to-action */
+
+/* H2 */
+html body section.call-to-action.clearfix div.container div.float-left.w-48 div.title h2{
+    /* *! se aumento il font si rompe e non è più centrato */
+    font-size:3em;
+    /* position:absolute; */
+    top:200px;
+}
+
+/* Pulsante call-to-action */
+button.btn-white:nth-child(1){
+    position:absolute;
+    top:200px;
+    right: 150px;
+}
+/* /fine sezione call-to-action */
 /* Debug */
 
 .debug header {
