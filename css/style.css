@@ -182,7 +182,7 @@ header .wrap {
 /* Inizio Jumbrotron */
 
 
-.jumbotron {
+#jumbotron {
 
     /* *! 1. Serve a dare lo sfondo bianco al bottom dell'immagine nella colonna di  destra  */
     /* *! Sostituire con un'immagine monocromatica e usare background-resize o trovare una soluzione migliore  */
@@ -196,14 +196,14 @@ header .wrap {
     background-repeat: no-repeat;
 }
 
-.jumbotron img {
+#jumbotron img {
     position: relative;
     width: 100%;
     z-index: 2;
 }
 
 /* Titolo jumbotron */
-.jumbotron h1 {
+#jumbotron h1 {
     font-size: 4em;
     padding-top: 2%;
 }
@@ -216,7 +216,7 @@ span.justify {
 }
 
 /* Div che contiene spa-descrione */
-section.jumbotron.clearfix div.container div.float-left.w-48.justify {
+section#jumbotron.clearfix div.container div.float-left.w-48.justify {
     margin-top: 1em;
 }
 
@@ -253,25 +253,24 @@ i.fas.fa-arrow-down.fa-2x{
 /* Fine Jumbotron */
 
 /* Inizio sezione piani di fatturazione */
-.piani-fatturazione {
+#piani-fatturazione {
     margin-top: 2em;
     margin-bottom: 2em;
 
 }
 
-.piani-fatturazione form div {
+#piani-fatturazione form div {
     display:inline;
 }
 
-.piani-fatturazione .col {
+#piani-fatturazione .col {
     border:solid 2px black;
 }
 
-.radio{
-    margin-top:1em;
+.radio {
+    position:relative;
+    top: 20px;
 }
-
-
 
 /* /Fine sezione piani di fatturazione */
 
@@ -341,4 +340,11 @@ button.btn-white:nth-child(1) {
     padding: 0 20px;
 }
 
+.column{
+    min-height: 400px;
+}
+
+.tab{
+    margin-top:30px;
+}
 /* /Fine Debug */
