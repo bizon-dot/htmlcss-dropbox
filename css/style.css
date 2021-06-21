@@ -434,6 +434,20 @@ button.btn-white:nth-child(1) {
 }
 
 /* /fine sezione call-to-action */
+
+/* Inizio FAQ */
+#faq .container .row {
+    width:100%;
+    padding: 40px;
+    border: solid 2px grey;
+}
+
+div.row:nth-child(2),
+#faq div.sub-title{
+    margin-top:50px;
+}
+
+/* /Fine FAQ */
 /* Debug */
 
 .debug .container {
