@@ -272,6 +272,34 @@ i.fas.fa-arrow-down.fa-2x{
     top: 20px;
 }
 
+/* Inizio tabella piani di fatturazione */
+
+.column{
+    margin-right: 20px;
+    width: calc((100% /3) - 20px);
+    min-height: 400px;
+}
+
+.tab{
+    margin-top:30px;
+}
+
+.column-header, 
+.column-text{
+    border: solid 2px grey;
+}
+
+.column-header{
+    text-align:center;
+}
+
+.column-text {
+    border-top: 0;
+}
+
+/* /Fine tabella piani di fatturazione */
+
+
 /* /Fine sezione piani di fatturazione */
 
 /* Sezione trovaAgente */
@@ -340,11 +368,5 @@ button.btn-white:nth-child(1) {
     padding: 0 20px;
 }
 
-.column{
-    min-height: 400px;
-}
 
-.tab{
-    margin-top:30px;
-}
 /* /Fine Debug */
