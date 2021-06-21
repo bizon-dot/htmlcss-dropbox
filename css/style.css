@@ -344,15 +344,38 @@ i.fas.fa-arrow-down.fa-2x {
 
 .list ul li {
     padding: 10px;
+}
 
-
-
+.fa-check{
+    color:blue;
 }
 
 
 
 /* /Formattazione contenuto colonne  */
+/* Piano Enterprise */
+#enterprise{
+    width:100%;
+    border: solid 2px grey;
+    
+}
 
+#enterprise .row-header{
+    text-align: center;
+    border-bottom: solid 2px grey;
+    
+}
+
+
+div.col-sub-title:nth-child(1){
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.descr{
+    padding:10px;
+    font-weight: bolder;
+}
 /* /Fine tabella piani di fatturazione */
 
 
