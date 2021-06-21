@@ -57,8 +57,6 @@ html {
     clear: both;
 }
 
-
-
 /*  */
 
 .center-x-y {
@@ -76,10 +74,6 @@ html {
     text-align: justify;
     text-justify: inter-word;
 }
-
-.center {
-    text-align: center;
-    }
 
 /* /Testo giustificato */
 
@@ -277,9 +271,6 @@ i.fas.fa-arrow-down.fa-2x{
     margin-top:1em;
 }
 
-.col-header{
-    padding: 30px;
-}
 
 
 /* /Fine sezione piani di fatturazione */
@@ -308,11 +299,6 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
 
 /* /Fine sezione trova agente */
 
-/* Sezione portfolio */
-
-
-/* Fine sezione portfolio */
-
 /* Sezione call-to-action */
 
 .call-to-action {
@@ -332,9 +318,9 @@ html body section.call-to-action.clearfix div.container div.float-left.w-48 div.
 /* H2 */
 html body section.call-to-action.clearfix div.container div.float-left.w-48 div.title h2 {
     /* *! se aumento il font si rompe e non è più centrato */
-    font-size: 2em;
+    font-size: 3em;
     /* position:absolute; */
-    /* top: 200px; */
+    top: 200px;
 }
 
 /* Pulsante call-to-action */
@@ -345,27 +331,6 @@ button.btn-white:nth-child(1) {
 }
 
 /* /fine sezione call-to-action */
-
-/* Inizio sezione FAQ */
-.faq{
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-/* Distanzio la prima domanda dal titolo */
-table{
-    margin-bottom:2em;
-}
-
-th, td {
-    border: 1px solid grey;
-  }
-  td{
-      padding:30px;
-      padding-right:350px;
-      
-  }
-
 /* Debug */
 
 .debug .container {
