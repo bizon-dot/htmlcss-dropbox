@@ -582,11 +582,6 @@ footer {
     margin-top: 3em;
 }
 
-footer .container .row{
-    
-   
-}
-
 footer div{
     display: inline;
 }
@@ -595,9 +590,24 @@ footer .col {
     float: left;
     width: calc(100% / 5 - 100px);
     margin-left: 100px;
-
 }
 
+footer .col h4 {
+    padding: 40px 0 40px 0;
+}
 
+footer ul {
+	list-style: none;
+}
 
-/* /footer */
+footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+#select_lang{
+    margin-top: 800px;
+    border-top: 3px solid lightgrey;
+}
+/* /Footer */
