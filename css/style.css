@@ -442,6 +442,14 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
     margin-top: 3vw;
 }
 
+#partners .row{
+    width:100%;
+}
+
+#partners div{
+    display: inline;
+}
+
 #partners .col-side {
     float: left;
     height: 30vw;
@@ -451,11 +459,11 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
 
 #partners .col-center {
     float: left;
-    background-color: white;
-    width: calc(100% -60vw);
+    background-color: grey;
+    width: calc(100% - 60vw);
     height: 30vw;
     padding: 50px;
-    overflow-y: auto;;
+    overflow-y: auto;
     
 }
 
@@ -472,6 +480,16 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
     width: 50%;
     vertical-align: middle;
     filter: invert(1);
+}
+
+#partners .col-center img {
+    width: 30%;
+    vertical-align: middle;
+}
+
+#partners .col-center p {
+    display: block;
+    margin: 50px 0;
 }
 
 /* immagine "selezionata" */
