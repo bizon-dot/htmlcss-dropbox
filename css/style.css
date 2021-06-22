@@ -258,9 +258,14 @@ i.fas.fa-arrow-down.fa-2x {
 /* Inizio tabella piani di fatturazione */
 
 #piani-fatturazione .column {
-    margin-left: 20px;
-    width: calc((100% / 3) - 20px);
+    
+    width: calc((100% / 3) - 40px);
 
+}
+
+/* colonna centrale */
+#piani-fatturazione div.column:nth-child(2){
+    margin: 0 60px;
 }
 
 .column-text {
