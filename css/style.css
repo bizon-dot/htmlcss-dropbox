@@ -348,17 +348,17 @@ i.fas.fa-arrow-down.fa-2x {
     color:blue;
 }
 
-
-
 /* /Formattazione contenuto colonne  */
 /* Piano Enterprise */
-#enterprise{
+#enterprise .row{
     width:100%;
     border: solid 2px grey;
+    margin-top:50px;
     
 }
 
 #enterprise .row-header{
+   
     text-align: center;
     border-bottom: solid 2px grey;
     
@@ -442,6 +442,7 @@ button.btn-white:nth-child(1) {
     border: solid 2px grey;
 }
 
+/* Distanzio la prima domanda e il titolo della sezione */
 div.row:nth-child(2),
 #faq div.sub-title{
     margin-top:50px;
