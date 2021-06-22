@@ -414,7 +414,10 @@ div.col-sub-title:nth-child(1){
 /* /Fine sezione piani di fatturazione */
 
 /* Sezione trovaAgente */
-/* Img */
+
+#trova-agente {
+    margin-bottom: 3em;
+}
 div.w-48:nth-child(1)>img:nth-child(1) {
     width: 100%;
 }
@@ -440,6 +443,10 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
 /* Inizio sezione partners */
 #partners{
     margin-top: 3vw;
+}
+
+#partners .container-header{
+    width:80%;
 }
 
 #partners .row{
@@ -501,6 +508,10 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
 
 #partners .partner-box.selected img {
     width:60%;
+}
+
+.link-partners  {
+   margin-top:2em;
 }
 
 
