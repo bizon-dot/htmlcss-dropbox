@@ -514,21 +514,18 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
    margin-top:2em;
 }
 
-
-
-
 /* Fine sezione partners */
 
 /* Sezione call-to-action */
 
-.call-to-action {
+#call-to-action {
     background-color: rgba(107, 185, 240, 1);
     height: 400px;
-    position: relative;
+   
 }
 
 /* div H2 call-to-action */
-html body section.call-to-action.clearfix div.container div.float-left.w-48 div.title {
+#call-to-action div.title {
     margin-top: 200px;
     color: maroon;
 }
@@ -551,8 +548,18 @@ button.btn-white:nth-child(1) {
 
 /* /fine sezione call-to-action */
 
+/* Call to action(2) */
+#call-to-action .row{
+    width:100%;
+}
+
 /* Inizio FAQ */
-#faq .container .row {
+#faq{
+    margin-top:3em;
+    
+}
+
+#faq .container.clearfix .row {
     width:100%;
     padding: 40px;
     border: solid 2px grey;
@@ -565,6 +572,32 @@ div.row:nth-child(2),
 }
 
 /* /Fine FAQ */
-/* Debug */
 
-/* /Fine Debug */
+/* Footer */
+
+footer {
+    background-color: black;
+    color:white;
+    padding-bottom: 50px;
+    margin-top: 3em;
+}
+
+footer .container .row{
+    
+   
+}
+
+footer div{
+    display: inline;
+}
+
+footer .col {
+    float: left;
+    width: calc(100% / 5 - 100px);
+    margin-left: 100px;
+
+}
+
+
+
+/* /footer */
