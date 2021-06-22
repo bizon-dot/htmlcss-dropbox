@@ -114,23 +114,47 @@ button {
 }
 
 /* Classi colore */
-
+/* Sfondi */
 .bg-blue {
     background-color: blue;
-
 }
 
 .bg-white {
     background-color: white;
 }
 
+.bg-red {
+    background-color: red;
+}
 
-/* /Fine Classi colore */
-
-.row {
-    display: inline-block;
+.bg-yellow{
+    background-color: yellow;
 
 }
+
+.bg-light-blue{
+    background-color: rgb(112, 112, 241);
+}
+
+.bg-light-sea-green{
+    background-color:lightseagreen;
+}
+
+.bg-light-green{
+    background-color:lightgreen;
+}
+
+.bg-purple{
+    background-color:purple;
+}
+
+.bg-light-orange{
+    background-color:rgb(233, 55, 55);
+}
+/* /Sfondi */
+
+
+/* /Fine Classi colore */
 
 /* Fine Generali */
 
@@ -238,6 +262,11 @@ i.fas.fa-arrow-down.fa-2x {
 #piani-fatturazione {
     margin-top: 2em;
     margin-bottom: 2em;
+
+}
+
+#piani-fatturazione .row {
+    display: inline-block;
 
 }
 
@@ -408,6 +437,59 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
 
 /* /Fine sezione trova agente */
 
+/* Inizio sezione partners */
+#partners{
+    margin-top: 3vw;
+}
+
+#partners .col-side {
+    float: left;
+    height: 30vw;
+    width: 30vw;
+    
+}
+
+#partners .col-center {
+    float: left;
+    background-color: white;
+    width: calc(100% -60vw);
+    height: 30vw;
+    padding: 50px;
+    overflow-y: auto;;
+    
+}
+
+#partners .col-side .partner-box {
+    float:left;
+    height: 15vw;
+    width: 15vw;
+    text-align: center;
+    line-height: 15vw;
+
+}
+
+#partners .col-side img {
+    width: 50%;
+    vertical-align: middle;
+    filter: invert(1);
+}
+
+/* immagine "selezionata" */
+
+#partners .partner-box.selected  {
+    border: solid 5px lightgray;
+    line-height:14vw;
+}
+
+#partners .partner-box.selected img {
+    width:60%;
+}
+
+
+
+
+/* Fine sezione partners */
+
 /* Sezione call-to-action */
 
 .call-to-action {
@@ -455,14 +537,5 @@ div.row:nth-child(2),
 
 /* /Fine FAQ */
 /* Debug */
-
-.debug .container {
-    background-color: blue;
-}
-
-.btn-little {
-    padding: 0 20px;
-}
-
 
 /* /Fine Debug */
