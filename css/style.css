@@ -230,6 +230,10 @@ header .wrap {
     color:black;
 }
 
+header a:hover{
+    border-bottom: 1px solid black;
+    padding-bottom: 5%;
+}
 
 /* Span descrizione jumbtron */
 span.justify {
