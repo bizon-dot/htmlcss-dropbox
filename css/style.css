@@ -56,16 +56,6 @@ html {
     clear: both;
 }
 
-/*  */
-
-.center-x-y {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
 /* Formattazione testo */
 
 /* Testo giustificato */
@@ -153,10 +143,7 @@ button {
     background-color:rgb(233, 55, 55);
 }
 /* /Sfondi */
-
-
 /* /Fine Classi colore */
-
 /* Fine Generali */
 
 /* Header */
@@ -199,6 +186,24 @@ header .wrap {
     margin-left: 50px;
     padding: 5px 10px;
 
+}
+
+/* nascondo il submenù */
+header .menu {
+    list-style: none;
+    /* display:none; */
+    float:none;
+    position:absolute;
+    background: white;
+}
+
+header ul.menu li {
+    /* padding: 10px; */
+    white-space: nowrap;
+}
+
+header li.hover:hover{
+    display:block;
 }
 
 /* / Bottone accedi */
@@ -544,7 +549,6 @@ div.float-right:nth-child(2)>h2:nth-child(1) {
 
 /* H2 */
 html body section.call-to-action.clearfix div.container div.float-left.w-48 div.title h2 {
-    /* *! se aumento il font si rompe e non è più centrato */
     font-size: 3em;
     top: 200px;
 }
