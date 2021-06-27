@@ -5,8 +5,12 @@
 }
 
 /* Generali */
+html {
+    scroll-behavior: smooth;
+
+}
+
 .container {
-    position: relative;
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
@@ -51,6 +55,7 @@ button {
 .bg-white {
     background-color: white;
 }
+
 /* /Generali */
 
 /* Header */
@@ -98,6 +103,10 @@ header .no-border-on-hover:hover {
 
 /* Jumbotron */
 
+#jumbotron .container {
+    width: 90% !important;
+}
+
 #jumbotron .container-bg {
     min-height: 30vh;
     background-color: #ADD8E6;
@@ -118,7 +127,7 @@ header .no-border-on-hover:hover {
 #jumbotron .col-right img {
     width: 60%;
     padding-left: 40px;
-    margin-bottom: -200px;
+    margin-bottom: -225px;
 }
 
 #jumbotron button {
@@ -127,14 +136,150 @@ header .no-border-on-hover:hover {
 
 #jumbotron .col-left p {
     font-size: 10px;
-} 
+}
 
 /* Freccia */
 
 #jumbotron .fas.fa-arrow-down {
-    color:black;
+    color: black;
     margin: 1vh 0;
 
 }
 
 /* /Jumbotron */
+
+/* Piani di fatturazione */
+
+#piani-di-fatturazione form div {
+    display: inline;
+}
+
+#piani-di-fatturazione .container-flex{
+    margin: 5vh auto;
+}
+
+/* Layout tre colonne */
+
+#piani-di-fatturazione .col {
+    flex: 1;
+    border: solid 1px lightslategrey;
+    min-width: 50vh;
+    
+}
+
+/* Imposto i margini left & right alla colonna centrale */
+div.col:nth-child(2){
+    margin: 0 30px;
+}
+
+#piani-di-fatturazione .col-header {
+        text-align: center;
+        padding: 30px;
+        border-bottom: solid 1px lightslategrey;
+
+}
+
+#piani-di-fatturazione .col-text {
+    border-top: 0;
+    padding: 50px;
+    font-size: 14px;
+
+}
+
+/* Formattazione contenuto colonne  */
+.name-plane {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.price {
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.details {
+    font-size: 10px;
+    color: gray;
+    
+
+}
+
+.storage,
+.trial-30,
+.num-users,
+.link-trial,
+.col-sub-title,
+.tools,
+.name-plane,
+.price,
+.details {
+    padding: 10px;
+}
+
+.tools {
+    font-weight: 100;
+}
+
+/* Link acquista ora  */
+.trial-30 a {
+    text-decoration: none;
+    color: blue;
+}
+
+.col hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.col-sub-title {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.list ul li {
+    padding: 10px;
+}
+
+.fa-check{
+    color:blue;
+}
+
+/* /Formattazione contenuto colonne  */
+
+/* Piano Enterprise */
+#enterprise{
+    border: solid 1px grey;
+    margin-top:50px;
+    
+}
+#enterprise .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+#enterprise .row-header{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+#enterprise .row h3 {
+    font-size: 30px;
+}
+
+#enterprise button {
+    margin: 1vh 0;
+}
+
+
+div.col-sub-title:nth-child(1){
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/* Piano Enterprise */
+/* /Piani di fatturazione */
