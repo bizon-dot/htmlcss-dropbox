@@ -1,13 +1,56 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Generali */
+.container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
+.container-flex {
+    display: flex;
+}
 
+/* Formattazione testo */
 
+.section-title {
+    padding: 20px 0;
+}
+
+.section-text {
+    font-size: 14px;
+
+}
+
+/* / Formattazione testo */
+
+/* Reset bottoni, formattazione contenuto generale e impostazioni dello sfondo trasparente */
+
+button {
+    color: white;
+    background-color: rgba(255, 99, 71, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+
+}
+
+/* Classi colore */
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-white {
+    background-color: white;
+}
 /* /Generali */
 
 /* Header */
@@ -15,7 +58,7 @@ box-sizing: border-box;
 nav {
     display: flex;
     flex-direction: row;
-}   
+}
 
 
 /* Formattazione testo e lista */
@@ -24,30 +67,74 @@ header a {
     color: black;
 }
 
-header nav ol.left-menu li ,
+header nav ol.left-menu li,
 header nav ol.right-menu li {
     list-style-type: none;
     padding: 20px;
 
 }
 
- header nav ol.left-menu {
-     display: flex;
-     flex-direction: row;
-     margin-right: auto;
+header nav ol.left-menu {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
 
 }
 
 header nav ol.right-menu {
     display: flex;
-   
+
 }
 
-header li:hover{
+header li:hover {
     border-bottom: 1px solid black;
 }
 
-header .no-border-on-hover:hover{
+header .no-border-on-hover:hover {
     border: 0;
 }
+
 /* /Header */
+
+/* Jumbotron */
+
+#jumbotron .container-bg {
+    min-height: 30vh;
+    background-color: #ADD8E6;
+
+}
+
+#jumbotron .col-left,
+#jumbotron .col-right {
+    flex-direction: column;
+}
+
+#jumbotron h1.section-title {
+    flex-direction: row;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#jumbotron .col-right img {
+    width: 60%;
+    padding-left: 40px;
+    margin-bottom: -200px;
+}
+
+#jumbotron button {
+    margin: 1vh 0;
+}
+
+#jumbotron .col-left p {
+    font-size: 10px;
+} 
+
+/* Freccia */
+
+#jumbotron .fas.fa-arrow-down {
+    color:black;
+    margin: 1vh 0;
+
+}
+
+/* /Jumbotron */
